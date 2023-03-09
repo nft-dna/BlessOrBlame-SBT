@@ -37,7 +37,7 @@ contract TokenUriLogicContract is Ownable {
             '<?xml version="1.0" encoding="UTF-8"?>',
             '<svg x="0px" y="0px" viewBox="0 150 800 800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="xMinYMin meet"',
             ((tokenId == 2) ? bytes(" transform=\"scale(-1 -1)\"") : bytes(" ")),
-            ' />',
+            ' >',
             generateCharacterSvg(tokenId),
             "</svg>"
         );
@@ -57,7 +57,7 @@ contract TokenUriLogicContract is Ownable {
             "{"
             '"name": "',
             ((tokenId == 1) ? bytes("Bless")  : bytes("Blame")),
-            " BoB"
+            " (BoB SBT)"
             //bytes(id256.toString()),
             //' owned: ',
             //bytes(MainContract.balanceOf(tokenOwner).toString()),
@@ -66,7 +66,6 @@ contract TokenUriLogicContract is Ownable {
             '"image": "',
             generateCharacter(tokenId),
             '"'
-            "]"
             "}"
         );
         return
