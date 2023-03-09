@@ -126,8 +126,10 @@ contract SoulBoundBlessOrBlame is Context, ERC165, IERC1155, IERC1155MetadataURI
         address operator = _msgSender();
         require(_issuer[operator][to] == 0, "already judged");
 
-        _balances[id][to] += 1;
-        _issuer[operator][to] = id;
+        unchecked {
+            _balances[id][to] = _balances[id][to] + 1;
+            _issuer[operator][to] = id;
+        }
 
         emit TransferSingle(operator, address(0), to, id, 1);
     }
