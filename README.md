@@ -13,4 +13,4 @@ Let's see which address will be blessed or will be blamed more !
 Deployed on groeli testnet at:
 https://goerli.etherscan.io/address/0x88D6d10F23E16749108eE13Bf83010deb46cF287#readContract
 
-Opensea: https://testnets.opensea.io
+Opensea: https://testnets.opensea.io/collection/blessorblame
