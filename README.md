@@ -6,7 +6,7 @@ Give your cent for the web3 community awarness !<br />
 <br />
 Bless or Blame an ethereum/polygon/binance/avalace address.<br />
 Your judgment will be sent to the address and there will be no way to transfer or refuse it<br />
-Only you (the issuer) will be (possibly) able to burn it.<br />
+Only the issuer would be able to burn it.<br />
 <br />
 Let's see which address will be blessed and which ones will be blamed more !<br />
 <br />
